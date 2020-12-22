@@ -18,6 +18,22 @@ body {
 
 /* utilities */
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 15px 16px;
+}
+
+.card {
+  flex-basis: 32%;
+  margin-right: 1%;
+  padding-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+}
+
 /* header */
 
 /* main */
