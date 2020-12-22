@@ -1,1 +1,30 @@
-//
+/*
+****** MAIN SCSS
+****************/
+
+
+
+/* Variables */
+
+@import "partials/_varable.scss";
+
+/* commons */
+
+@import "partials/_common.scss";
+
+/* utilities */
+
+@import "partials/_utilities.scss";
+
+/* header */
+
+@import "partials/_header.scss";
+
+/* main */
+
+@import "partials/_main.scss";
+
+/* footer */
+
+@import "partials/_footer.scss";
+
