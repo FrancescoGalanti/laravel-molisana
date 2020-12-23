@@ -4,6 +4,6 @@
     <nav>
         <img src="{{ asset('dati-molisana/logo.png') }}" alt="">
     </nav>
-    <a href="our-news">Our news</a>
-    <a href="/">home</a>
+    <a href="{{route('news')}}">Our news</a>
+    <a href="{{route('home')}}">home</a>
 </header>

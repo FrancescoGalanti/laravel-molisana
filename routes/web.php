@@ -21,7 +21,9 @@ Route::get('/', function () {
     $corte = [];
     $cortissime = [];
 
-    foreach ($data as $card){
+    foreach ($data as $key => $card){
+
+        $card["id"] = $key;
         if($card['tipo'] == 'lunga'){
             $lunghe[] = $card;
         }
@@ -32,14 +34,20 @@ Route::get('/', function () {
             $cortissime[] = $card;
         }
     }
-
+    dd($lunghe, $corte, $cortissime);
     return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
-});
+})-> name('home');
+
+Route::get('/product/{id}', function ($id) {
+    dumb($id);
+
+    return 'product page';
+})-> name('product');
 
 Route::get('/our-news', function () {
     
     return view('news');
-});
+})-> name('news');
 
 
 
