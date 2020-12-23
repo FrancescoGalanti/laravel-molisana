@@ -34,14 +34,16 @@ Route::get('/', function () {
             $cortissime[] = $card;
         }
     }
-    dd($lunghe, $corte, $cortissime);
+   /*  dd($lunghe, $corte, $cortissime); */
+
     return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
 })-> name('home');
 
 Route::get('/product/{id}', function ($id) {
-    dumb($id);
 
-    return 'product page';
+    dump($id);
+
+    return view('product');
 })-> name('product');
 
 Route::get('/our-news', function () {
