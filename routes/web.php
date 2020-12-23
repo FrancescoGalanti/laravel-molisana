@@ -36,3 +36,10 @@ Route::get('/', function () {
     return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
 });
 
+Route::get('/our-news', function () {
+    
+    return view('news');
+});
+
+
+
