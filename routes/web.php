@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    include 'database/data.php'; // pasta date
+    $data = config('site-data');
     // dd($data); //log database
 
     $lunghe = [];
