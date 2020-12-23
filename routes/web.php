@@ -40,10 +40,15 @@ Route::get('/', function () {
 })-> name('home');
 
 Route::get('/product/{id}', function ($id) {
+    // testing
+    /* dump($id); */
 
-    dump($id);
+    include 'database/data.php'; 
 
-    return view('product');
+    $product = $data[$id];
+    
+
+    return view('product', ['product' => $product]);
 })-> name('product');
 
 Route::get('/our-news', function () {

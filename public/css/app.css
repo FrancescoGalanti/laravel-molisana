@@ -18,15 +18,13 @@ body {
 
 /* utilities */
 
+/* header */
+
+/* main */
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 15px 16px;
 }
 
 .card {
@@ -41,9 +39,28 @@ body {
   display: block;
 }
 
-/* header */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-/* main */
+.hero img {
+  width: 600px;
+  height: 300px;
+  display: block;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description p {
+  width: 600px;
+}
 
 /* footer */
 
