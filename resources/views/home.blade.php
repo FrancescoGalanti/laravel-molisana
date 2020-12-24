@@ -1,8 +1,17 @@
 @extends('layouts.main')
 
 @section('content')
+{{-- SEZIONI LUNGHE --}}
+@include('partials.cards', ['cards' => $lunghe, 'title' => 'LE LUNGHE'])
+{{-- SEZIONI CORTE --}}
+@include('partials.cards', ['cards' => $corte, 'title' => 'LE CORTE'])
+{{-- SEZIONI CORTISSIME --}}
+@include('partials.cards', ['cards' => $cortissime, 'title' => 'LE CORTISSIME'])
 
-<section class="type-section container">
+
+
+
+<!-- <section class="type-section container">
     <h2>LE LUNGHE</h2>
     <div class="cards">
         @foreach ($lunghe as $card)
@@ -42,7 +51,7 @@
         </div>        
         @endforeach
     </div>
-</section>
+</section> -->
 
   
 @endsection
