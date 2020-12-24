@@ -36,7 +36,8 @@ Route::get('/', function () {
     }
    /*  dd($lunghe, $corte, $cortissime); */
 
-    return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
+    /* return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]); */
+    return view('home', compact('lunghe', 'corte', 'cortissime'));
 })-> name('home');
 
 Route::get('/product/{id}', function ($id) {
@@ -46,9 +47,11 @@ Route::get('/product/{id}', function ($id) {
     include 'database/data.php'; 
 
     $product = $data[$id];
+
+    $length = count($data) - 1;
     
 
-    return view('product', ['product' => $product]);
+    return view('product', compact('product', 'length', 'id'));
 })-> name('product');
 
 Route::get('/our-news', function () {
