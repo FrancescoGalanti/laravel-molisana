@@ -26,7 +26,19 @@
          Fax: +39 0874 629584
        </li>
        <li>
-         info@lamolisana.it (per segnalazioni degli utenti)
+         info@lamolisana.it (per segnalazioni <div>degli utenti)</div>
+       </li>
+       <li>
+         commerciale@lamolisana.it
+       </li>
+       <li>
+         export@lamolisana.it
+       </li>
+       <li>
+         numero verde 800818081
+       </li>
+       <li>
+         telefono 3801292455
        </li>
      </ul>
   </div>
