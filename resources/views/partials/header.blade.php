@@ -6,4 +6,6 @@
     </nav>
     <a href="{{route('news')}}">Our news</a>
     <a href="{{route('home')}}">home</a>
+    <i class="fas fa-bars"></i>
 </header>
+

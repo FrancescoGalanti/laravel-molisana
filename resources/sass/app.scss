@@ -1,6 +1,13 @@
 /*
 ****** MAIN SCSS
 ****************/
+/* Font awesome */
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
 
 
 
@@ -27,4 +34,13 @@
 /* footer */
 
 @import "partials/_footer.scss";
+
+/* MEDIA SCREEN */
+@media screen and (min-width: 420px){
+    header{
+        a{
+            opacity: 0;
+        } 
+    }
+}
 
