@@ -6147,6 +6147,10 @@ body {
 
 /* utilities */
 
+li {
+  list-style: none;
+}
+
 /* header */
 
 header {
@@ -6156,11 +6160,22 @@ header {
   align-items: center;
 }
 
+i.fas.fa-bars::before {
+  margin-bottom: 20px;
+}
+
 /* main */
 
 main {
   background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+h2 {
+  padding-left: 35px;
+  padding-bottom: 20px;
 }
 
 .cards {
@@ -6169,15 +6184,16 @@ main {
 }
 
 .card {
-  flex-basis: 32%;
+  flex-basis: calc(100% / 1);
   margin-right: 1%;
   padding-bottom: 15px;
 }
 
 .card img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   display: block;
+  margin-left: 35px;
 }
 
 .hero {
@@ -6205,11 +6221,35 @@ main {
 
 /* footer */
 
+.container-img {
+  display: flex;
+  margin-top: 45px;
+}
+
+.container-img img {
+  margin-left: 30px;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
 /* MEDIA SCREEN */
 
 @media screen and (min-width: 420px) {
   header a {
     opacity: 0;
+  }
+
+  main h3 {
+    display: none;
+  }
+
+  main a {
+    display: none;
   }
 }
 

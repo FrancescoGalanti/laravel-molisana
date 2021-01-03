@@ -4,3 +4,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+i.fas.fa-bars::before{
+    margin-bottom: 20px;
+}

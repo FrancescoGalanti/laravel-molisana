@@ -1,0 +1,15 @@
+.container-img{
+    display: flex;
+    margin-top: 45px;
+
+    img{
+        margin-left: 30px;
+    }
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 30px;
+}
